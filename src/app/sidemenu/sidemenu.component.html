@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">SSB</a>  <!-- This part is left for logo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" (click)="admindashboard()">Dashboard <span class="sr-only">(current)</span></a> <!--Used 'sr-only' class for the screen reader purpose -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Words</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="addemployee()">Add </a>
+            <a class="dropdown-item" (click)="employeedetails()">View</a>   <!--Yet more options to be added-->
+            <a class="dropdown-item" (click)="addemployee()">Edit</a>
+            <a class="dropdown-item" (click)="employeedetails()">Upload</a>  
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Negative Words
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="addemployee()">Add </a>
+            <a class="dropdown-item" (click)="employeedetails()">View</a>   <!--Yet more options to be added-->
+            <a class="dropdown-item" (click)="addemployee()">Edit</a>
+            <a class="dropdown-item" (click)="employeedetails()">Upload</a>  
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pictures
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="addemployee()">Add </a>
+            <a class="dropdown-item" (click)="employeedetails()">View</a>   <!--Yet more options to be added-->
+            <a class="dropdown-item" (click)="addemployee()">Edit</a>
+            <a class="dropdown-item" (click)="employeedetails()">Upload</a>  
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Practise test
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="createpractisetest()">Create</a>
+            <a class="dropdown-item" (click)="employeedetails()">View</a>   <!--Yet more options to be added-->
+            <a class="dropdown-item" (click)="addemployee()">Remove</a> 
+        <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Salary and Attendance</a> leave reports generation -->
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Real Test
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="shiftschedule()">Create</a> <!--Assigning shifts to the employees-->
+            <a class="dropdown-item" (click)="holiday()">View</a> 
+            <a class="dropdown-item" (click)="holiday()">Remove</a> 
+          </div>
+        </li>
+      </ul>
+  
+      <!--Logout option should be included-->
+  
+  
+      <form class="form-inline my-2 my-lg-0">
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit" routerLink="/">logout</button> 
+      </form>
+    </div>
+  </nav>
